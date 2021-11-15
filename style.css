@@ -4,7 +4,7 @@
 }
 .Container {
   width: 1280px;
-  height: 2056px;
+  /* height: 2056px; */
 }
 .Navbar {
   display: flex;
@@ -71,10 +71,11 @@
 }
 
 .Declaration-offer {
+
   width: 1280px;
-  height: 574px;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.15);
-  background-image: url(../images/forest.jpg.jfif);
+  background-image: url(./images/forest.jpg.jfif);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,11 +194,11 @@ h2 {
   line-height: 21px;
   color: #000000;
 }
-.specialist first:nth-of-type(odd) {
+.specialist:nth-of-type(odd) {
   flex-direction: row;
 }
 
-.specialist second:nth-of-type(even) {
+.specialist:nth-of-type(even) {
   flex-direction: row-reverse;
 }
 
