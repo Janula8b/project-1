@@ -1,6 +1,7 @@
 * {
   margin: 0 auto;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 .Container {
   width: 1280px;
@@ -42,6 +43,8 @@
   font-size: 18px;
   line-height: 21px;
   align-items: center;
+  text-decoration: none;
+  scroll-behavior: smooth;
   color: #f1f1f1;
   margin: 13px 23px 11.17px 0px;
 }
@@ -54,6 +57,8 @@
   font-size: 18px;
   line-height: 21px;
   align-items: center;
+  text-decoration: none;
+  scroll-behavior: smooth;
   color: #f1f1f1;
   margin: 13px 23px 16px 23px;
 }
@@ -66,6 +71,7 @@
   font-size: 18px;
   line-height: 21px;
   align-items: center;
+  cursor: not-allowed;
   color: #f1f1f1;
   margin: 13.83px 90px 15.17px 23px;
 }
@@ -73,8 +79,9 @@
 .Declaration-offer {
 
   width: 1280px;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.15);
+  height: 574px;
+  /* height: 100vh; */
+  opacity: 0.95;
   background-image: url(./images/forest.jpg.jfif);
   display: flex;
   flex-direction: column;
@@ -107,9 +114,17 @@ header {
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
+  text-decoration: none;
   color: #ffffff;
   text-align: center;
   margin: 30px 1080px 195.16px 151px;
+  background-color: none;
+  transition-property: background-color color;
+  transition-duration: 1s;
+}
+.box-offer:hover {
+  background-color: white;
+  color: black;
 }
 .Specialists {
   width: 1280px;
@@ -117,6 +132,7 @@ header {
   background-color: white;
   display: flex;
   flex-direction: column;
+  padding: 10px 50px;
 }
 
 .header-specialists {
@@ -138,12 +154,6 @@ header {
   width: 100%;
   height: 250px;
 }
-.first {
-  /*   background-color: green; */
-}
-.second {
-  /*   background-color: yellow; */
-}
 .box-circle {
   display: flex;
   width: 197px;
@@ -153,14 +163,16 @@ header {
   width: 100%;
   border-radius: 50%;
   background: #c4c4c4;
-  background-image: url();
+  background-image: url(./images/spec1.jpg);
+  background-position: center;
   aspect-ratio: 1/1;
 }
 .circle-2 {
   width: 100%;
   border-radius: 50%;
   background: #917d7d;
-  background-image: url();
+  background-image: url(./images/spec2.jfif);
+  background-position: center;
   aspect-ratio: 1/1;
 }
 .specialist-text {
@@ -172,7 +184,6 @@ header {
   /*  align-items: flex-start; */
   height: 197px;
   background-color: #fff;
-  /*  background-color: red; */
   padding: 40px;
 }
 h {
@@ -194,11 +205,11 @@ h2 {
   line-height: 21px;
   color: #000000;
 }
-.specialist:nth-of-type(odd) {
+.specialist:nth-of-type(even) {
   flex-direction: row;
 }
 
-.specialist:nth-of-type(even) {
+.specialist:nth-of-type(odd) {
   flex-direction: row-reverse;
 }
 
@@ -245,6 +256,9 @@ h2 {
   line-height: 28px;
   color: #000000;
   position: relative;
+}
+.box:hover {
+  transform: scale(1.05);
 }
 .red-point {
   width: 22px;
