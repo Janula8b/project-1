@@ -194,10 +194,19 @@ header {
   padding: 40px 10px;
   font-family: Roboto;
   font-style: normal;
-  font-weight: bold;
   font-size: 18px;
   line-height: 21px;
+  text-align: justify;
   color: #000000;
+}
+
+p.robert-text {
+  font-weight: bolder;
+}
+
+p.halina-text {
+  font-weight: bolder;
+  text-align: right;
 }
 
 p {
