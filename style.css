@@ -266,6 +266,8 @@ p {
   line-height: 28px;
   color: #000000;
   position: relative;
+  transition-timing-function: linear;
+  transition-duration: 0.5s;
 }
 
 .box:hover {
